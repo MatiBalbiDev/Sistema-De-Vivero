@@ -2,31 +2,28 @@
 function mostrarFamilia(){
     const familias = [
         {
-            nombre: "Árboles", 
+            nombre: "Lamiaceae",
+            imagen: "./images/lamiaceae.jpg",
         },
         {
-            nombre: "Limoneros"
+            nombre: "Umbelíferas",
+            imagen: "./images/umbeliferas.jfif"
         },
         {
-            nombre: "Flores"
+            nombre: "Flores",
+            imagen: "./images/familia1.jpg",
         }, 
         {
-            nombre: "Árboles", 
+            nombre: "Árboles",
+            imagen: "./images/familia1.jpg",
         },
         {
-            nombre: "Limoneros"
+            nombre: "Limoneros",
+            imagen: "./images/familia1.jpg",
         },
         {
-            nombre: "Flores"
-        },
-        {
-            nombre: "Árboles", 
-        },
-        {
-            nombre: "Limoneros"
-        },
-        {
-            nombre: "Flores"
+            nombre: "Flores",
+            imagen: "./images/familia1.jpg",
         },
     ] 
 
@@ -34,15 +31,26 @@ function mostrarFamilia(){
 
     familias.map(
         familia => {
-            contenedor.innerHTML+= ` <div class="card" id="card" style="width: 18rem;">
-            <img src="./images/familia1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">${familia.nombre}</h5>
-            <p class="card-text">$40.000</p>
-            <a href="#" class="btn btn-primary">Agregar al carrito</a>
-            </div>
-        </div> `
+            contenedor.innerHTML+= ` 
+            <div class="card" id="card" style="width: 18rem;">
+                <img src=${familia.imagen} class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${familia.nombre}</h5>
+                    <p class="card-text">$40.000</p>
+                    <a onclick="${settearFamilia(familia.nombre)}" href="./listaPlantas.html"  class="btn btn-xs btn-dark btn-block rounded-0">VER PLANTAS</a>
+                </div>
+            </div> `
         }
     )
+
+    
 }
+
+function settearFamilia(nombreFamilia){
+    let familia = {
+        "nombre": "nombreFamilia"
+    }
+    localStorage.setItem("familia", JSON.stringify(familia))
+}
+
 mostrarFamilia()
