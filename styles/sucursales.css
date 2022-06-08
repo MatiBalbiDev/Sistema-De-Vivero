@@ -61,21 +61,23 @@ header .logo {
   font-size: 30px;
   line-height: 100px;
   float: left;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Bebas Neue', cursive;
 }
 
 h1 {
   font-size: 50px;
   text-align: center;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   margin: 10px auto;
+  margin-bottom: 50px;
 }
 
 #map {
-  height: 400px;
-  width: 600px;
-  margin: auto;
+  height: 350px;
+  width: 50%;
+  margin: 0 auto;
   cursor: move;
+
 }
 
 .place {
@@ -90,13 +92,13 @@ h1 {
 }
 
 ul {
-  border: black 2px solid;
-  width: 600px;
-  margin: 20px auto;
-  padding: 20px;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex: 1 1 auto;
 }
 
 li {
-  margin: 0 5px 2px 15px;
+  margin: 15px 5px 2px 30px;
   padding: 10px 2px;
 }
