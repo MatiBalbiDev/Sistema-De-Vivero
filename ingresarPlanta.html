@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/ingresarPlanta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
+    <title>Ingreso de Planta</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="principal"> </div>
+      <nav class="wrapper">
+        <div class="logo">
+          Lillian Isley
+        </div>
+        <div>
+          <a href="listaFamilias.html"> INICIO </a>
+        </div>
+    </header>
+
+    <h1 id="title">Ingreso de planta</h1>
+
+    <form id="load-form">
+      <label for="name" type="text" id="name-label">Nombre de la planta:</label>
+      <input id="name" class="plant-info" type="text" required placeholder="Ingrese su nombre de la planta..">
+      <br>
+      <label for="scientific-name" type="text" id="scientific-name-label">Nombre Cientifico:</label>
+      <input id="scientific-name" class="plant-info" type="text" required placeholder="Ingrese nombre cientifico de la planta..">
+      <br>
+      <label for="color" type="text" id="color-label">Color de la planta:</label>
+      <input id="color" class="plant-info" type="text" required placeholder="Ingrese el color..">
+      <br>
+      <label for="clase" type="text" id="clase-label">Clase:</label>
+      <input id="clase" class="plant-info" type="tex" required placeholder="Ingrese la clase..">
+      <br>
+      <label for="fruto" type="text" id="fruto-label">Fruto:</label>
+      <input id="fruto" class="plant-info" type="text" required  placeholder="Ingrese el tipo de fruto..">
+      <br>
+      <label for="img" type="text" id="img-label">Seleccione una imagen:</label>
+      <input id="img" class="plant-info" type="file" required>
+      <br>
+      <button type="submit" name="enviar" id="submit">Enviar</button>
+    </form>
+
+  </body>
+</html>
