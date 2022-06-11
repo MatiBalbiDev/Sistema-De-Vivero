@@ -12,7 +12,7 @@ function mostrarFamilia(){
         {
             nombre: "Flores",
             imagen: "./images/familia1.jpg",
-        }, 
+        },
         {
             nombre: "Árboles",
             imagen: "./images/familia1.jpg",
@@ -25,13 +25,13 @@ function mostrarFamilia(){
             nombre: "Flores",
             imagen: "./images/familia1.jpg",
         },
-    ] 
+    ]
 
     let contenedor = document.getElementById("cards")
 
     familias.map(
         familia => {
-            contenedor.innerHTML+= ` 
+            contenedor.innerHTML+= `
             <div class="card" id="card" style="width: 18rem;">
                 <img src=${familia.imagen} class="card-img-top" alt="...">
                 <div class="card-body">
@@ -43,7 +43,7 @@ function mostrarFamilia(){
         }
     )
 
-    
+
 }
 
 function settearFamilia(nombreFamilia){
