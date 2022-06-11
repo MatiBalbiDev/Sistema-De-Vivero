@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="styles/login.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500">
   <link rel="stylesheet" href="family=Fredoka+One&display=swap">
+  <script src="js/login.js"></script>
+
+  </script>
   <!-- Title -->
   <title>Iniciar Sesión</title>
 </head>
@@ -16,7 +19,7 @@
     <h1>¡Bienvenido! por favor inicie sesión.</h1>
   </header>
 
-  <form class="login-form" action="inicio.html">
+  <form class="login-form" action="listaFamilias.html">
 
     <div class="container-form">
       <!-- Username -->
@@ -26,7 +29,7 @@
       <label for="name"><b>Contraseña:</b></label>
       <input type="password" placeholder="Password">
       <!--  Button Login -->
-      <button type="submit" name="login" id="login">Ingresar</button>
+      <button type="submit" name="login" id="login" onclick="loguear();">Ingresar</button>
     </div>
 
   </form>
