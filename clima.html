@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
+  <link rel="stylesheet" href="styles/clima.css">
+
+
+  <title>Clima</title>
+
+</head>
+
+<body onload="cargarClima()">
+
+  <header>
+    <div class="principal"> </div>
+    <nav class="wrapper">
+      <div class="logo">
+        Lillian Isley
+      </div>
+      <div>
+        <a href="listaFamilias.html"> INICIO </a>
+      </div>
+  </header>
+
+  <h1 id="titulo">Pronostico</h1>
+  <div id="contenedor">
+    <div id="caja1">
+      <h3>Temperatura</h3>
+      <h1 id="temperatura-valor"></h1>
+      <h3>Humedad</h3>
+      <h1 id="humedad-valor"></h1>
+      <h3>Visibilidad</h3>
+      <h1 id="visibilidad-valor"></h1>
+    </div>
+    <div id="caja2">
+      <h2 id="ubicacion"></h2>
+      <img id="icono-animado" src="" alt="" height="128" width="128">
+      <h3>Estado</h3>
+      <h1 id="temperatura-descripcion"></h1>
+    </div>
+    <div id="caja3">
+      <h3>Veloc. del Viento</h3>
+      <h1 id="viento-velocidad"></h1>
+      <h3>Presion</h3>
+      <h1 id="presion-viento"></h1>
+    </div>
+  </div>
+  <div class="contenedor-semana">
+    <div id="iconsContainer">
+      <div class="icons">
+        <p class="clima" id="dia1"></p>
+        <div class="image"><img src="" class="imgClass" id="img1"></div>
+        <p class="fecha-clima" id="fecha1"></p>
+        <p class="minValues" id="dia1Min"></p>
+        <p class="maxValues" id="dia1Max"></p>
+      </div>
+      <div class="icons">
+        <p class="clima" id="dia2"></p>
+        <div class="image"><img src="" class="imgClass" id="img2"></div>
+        <p class="fecha-clima" id="fecha2"></p>
+        <p class="minValues" id="dia2Min"></p>
+        <p class="maxValues" id="dia2Max"></p>
+      </div>
+      <div class="icons">
+        <p class="clima" id="dia3"></p>
+        <div class="image"><img src="" class="imgClass" id="img3"></div>
+        <p class="fecha-clima" id="fecha3"></p>
+        <p class="minValues" id="dia3Min"></p>
+        <p class="maxValues" id="dia3Max"></p>
+      </div>
+      <div class="icons">
+        <p class="clima" id="dia4"></p>
+        <div class="image"><img src="" class="imgClass" id="img4"></div>
+        <p class="fecha-clima" id="fecha4"></p>
+        <p class="minValues" id="dia4Min"></p>
+        <p class="maxValues" id="dia4Max"></p>
+      </div>
+      <div class="icons">
+        <p class="clima" id="dia5"></p>
+        <div class="image"><img src="" class="imgClass" id="img5"></div>
+        <p class="fecha-clima" id="fecha5"></p>
+        <p class="minValues" id="dia5Min"></p>
+        <p class="maxValues" id="dia5Max"></p>
+      </div>
+    </div>
+  </div>
+  <h2 class="subtitle-alertas">Proximas alertas</h2>
+  <div class="contenedor-alertas" id="contenedor-alertas">
+  </div>
+
+
+</body>
+<script src="js/clima.js"></script>
+
+</html>
